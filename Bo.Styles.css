@@ -1,0 +1,42 @@
+html {
+
+	height: 100%;
+}
+
+.name {
+
+	text-align: left;
+	color: #1a8cff;
+	font-size: 50px;
+	padding: 5px;
+
+
+}
+
+
+
+.subtitle {
+
+	text-align: left;
+	color: #000066;
+	margin: 0;
+	font-size: 35px;
+	padding: 5px;
+
+}
+
+body {
+
+	padding: 0px;
+	border: 2px;
+	color: #000066;
+	margin: 0px;
+
+}
+
+figcaption {
+
+	color: #1a8cff;
+	font-size: 10px;
+
+}

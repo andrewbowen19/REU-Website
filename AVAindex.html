@@ -1,0 +1,165 @@
+<!-- Ava's website code -->
+<!-- I've stolen the rest of her code, might as well take this one too -->
+
+<html>
+<head>
+    <style>
+    body {
+        margin: 50px;
+        background-image: url("m79.jpg")
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 130%
+    }
+        
+    .contact {
+        width: 20%;
+    }
+    
+    .container {
+    overflow: hidden;
+    background-color: #00356b;
+    font-family: Arial;
+    }
+
+    .container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    .dropdown {
+    float: left;
+    overflow: hidden; 
+    }
+
+    .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    }
+
+    .container a:hover, .dropdown:hover .dropbtn {
+    background-color: #005bb8;
+    }
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00356b;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+    .dropdown-content a {
+    float: none;
+    color: #00356b;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+
+    .dropdown-content a:hover {
+    background-color: #ddd;
+    }
+
+    .show {
+    display: block;
+    }
+
+    
+    </style>
+    
+    <title>Ava Polzin</title>
+
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        
+</head>
+
+<body>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+};
+</script>
+<div class="header" style=" background: linear-gradient(to bottom, #00356b 0%, #000000 100%); padding: 10px; height: 150px ">
+  <div class="myself" style="float: left; padding-left: 20px">
+  <h1 style="color: white; font-family: Arial; font-size: 50px; margin-bottom: 0px">Ava Polzin</h1>
+  <p style="color: white; font-style: italic">Aspiring Astrophysicist at Northwestern University</p>
+  </div>
+  <div class="contact" style="float: right; width: 50%; padding-right: 20px" >
+    <h4 style="color: white; text-align: right; line-height: 20%">Contact:</h4>
+
+    <p style="color: white; font-size: 14px; text-align: right">AvaPolzin2018 [at] u.northwestern.edu<br>
+    (224) 475-7489 </p>
+    <div class=links style="float:right">
+    <a href="https://www.linkedin.com/in/ava-polzin-978a0584/"><i class="fa fa-linkedin" style="color: white"></i></a>
+    &nbsp;
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <a href="index.html">Home</a>
+  <a href="cv.html">CV</a>
+  <a href="research.html">Research</a>
+  <a href="otherinterests.html">Other Interests</a>
+</div>
+
+<div class="block1" style="background-color: #e5eaf0; position: absolute; margin-right: 50px;">
+  <div class="me">
+     <img src="always_photo.jpg" style="float: right; width: 30%; padding: 50px;">
+  </div>
+
+
+  <div class="description" style="padding: 50px;">
+    <h2 style="font-family: Arial"> About </h2>
+    <p>I am a senior (graduating December 2018) at Northwestern University, majoring in Physics & Astronomy. In my spare time (that is, when I'm not doing problem sets or working on my research), I serve as president of the Northwestern chapter of the <a href=https://spsatnu.wixsite.com/nusps/>Society of Physics Students</a>, host public (and private) observing sessions at Dearborn Observatory, tutor extensively, and teach a supplemental 
+    section to our introductory physics sequence, all while continuing my outreach efforts on the Pine Ridge 
+    Reservation in South Dakota.
+    </p>
+    
+    <p>
+    Despite my (zealous) commitment to physics, astronomy, and academia, I did spend a couple of years in Los Angeles, learning
+    from the best of the best in the music industry. While music supervision didn't remain the fit it had seemed when I entered
+    USC's Thornton School of Music after my junior year of high school, music itself is still an incredible passion of mine, and I'm
+    always happy to find out about new artists (or soundtracks!) to enjoy (my favorite albums of the moment - not that these have 
+    changed much over the years - are Ra Ra Riot's <i> The Rhumb Line </i>  and, perhaps unsurprisingly, Nada Surf's <i> 
+    The Stars Are Indifferent to Astronomy</i>). </p>
+  </div>
+
+
+
+
+</div>
+
+
+</body>
+</html>
+
+

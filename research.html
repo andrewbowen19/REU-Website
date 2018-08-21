@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+    body {
+        margin: 50px;
+        background-image: url("m79.jpg")
+    }
+    
+    
+     ul  {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+            
+            	
+	 p{
+        font-size: 18px;
+        line-height: 130%
+    } 
+        
+    .container {
+    overflow: hidden;
+    background-color: #99badd;
+    font-family: Arial;
+    }
+
+    .container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    .dropdown {
+    float: left;
+    overflow: hidden; 
+    }
+
+    .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    }
+
+    .container a:hover, .dropdown:hover .dropbtn {
+    background-color: #005bb8;
+    }
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00356b;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+    .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+
+    .dropdown-content a:hover {
+    background-color: #ddd;
+    }
+
+    .show {
+    display: block;
+    }
+    
+    </style>
+    
+    <title>Research | Andrew Bowen</title>
+
+   <link rel="stylesheet" href="Bo.Styles.css">     
+</head>
+
+<body>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+};
+</script>
+
+<div class="header" style=" background: linear-gradient(to bottom, #99badd 0%, #000000 100%); padding: 10px; height: 150px ">
+  <div class="myself" style="float: left; padding-left: 20px">
+  <h1 style="color: white; font-family: Arial; font-size: 50px; margin-bottom: 0px">Andrew Bowen</h1>
+  <p style="color: white; font-style: italic">Northwestern University Physics & Astronomy</p>
+  </div>
+  <div class="contact" style="float: right; width: 50%; padding-right: 20px" >
+    <h4 style="color: white; text-align: right; line-height: 20%">Contact:</h4>
+
+    <p style="color: white; font-size: 14px; text-align: right">atbowen@gmail.com<br>
+    (856)-701-0268</p>
+    <div class=links style="float:right">
+    <a href= "https://www.linkedin.com/in/andrew-bowen-b9a38b156/" ><i class="fa fa-linkedin" style="color: white"></i></a>
+    &nbsp;
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="otherinterests.html">Other Interests</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+
+<div class="block1" style="position: absolute; background-color: #e5eaf0; margin-right: 50px">
+
+<div class=desc style="width: 75%; margin: 0 auto; padding-top: 50px">
+<h2 style="font-family: Arial">Research</h2>
+
+
+
+<h3 style="font-family: Arial">Summer 2018 Research - Eclipsing Binary stars in the LSST Era</h3>
+
+<font size="4"><i> As a part of the CIERA Summer REU at Northwestern University, I studied the ability of LSST in viewing and finding the period of binary star systems. As a part of the project, I found limb-darkening coefficients for the new filter system used in LSST</i></font>
+
+<p></p>
+<p></p>
+
+<p><i>See a more polished version of the below work <a href="reu_poster.pdf">here</a>.</i></p>
+
+<p>The Large Synoptic Survey Telescope (LSST) will be able to survey billions of binary stars over its ten-year runtime. A large fraction of stars in the galaxy are locked in binary systems. Studying eclipsing binary stars is important for finding the mass of distant stars (and other important information such as their radius, distance, and luminosity). Eclipsing binaries give us a unique opportunity to study these systems more in depth.</p>
+
+<p>WIth LSST-like cadence, viewing field, etc. we simulate phase-folded light curves using the Python package <i>ellc</i> (Maxted 2016). These ellc-simulated 
+binaries are then fed through another package, <i>gatspy</i> (VanderPlas & Ivezic 2015), which uses 
+a multiband Lomb-Scargle periodogram,. This is done to find the period of binary stars.</p>
+
+
+<p>One of our best ways to study eclipsing binary systems is through the periodic dips in light curves. These light curves (plots of brightness vs time, are folded on top of each other over many observations, and look like the plot below.</p>
+
+
+<p><div class="me">
+     <img src="example_light_curve.pdf" style="float: center; width: 70%; padding: 20px;">
+  </div></p>
+
+
+<p>We used a linear interpolation for the <i>y</i>-band filter. Our software can be used with different combinations of stellar conditions. This specific plot shows an interpolation for stellar conditions of Teff = 5000K, log(g) = 2.5, and a metallicity of 0.</p>
+
+
+<p><div class="me">
+     <img src="poster_interp_plot.pdf" style="float: center; width: 70%; padding: 20px;">
+  </div></p>
+
+<p>Below is a plot of different binary characteristics from our simulation (log(Period), eccentricity, inclination, mass and radius ratios). <i>All Binaries</i> are defined as the population of all detached binary stars within LSSTs magnitude limits. <i>Observable Eclipsing Binaries</i> are defined as binaries which meet the criteria specified in Polzin 2018. In other words, these are binaries for which we can actually observe an eclipse. <i>Recoverable EBs</i> are binaries for which the Lomb-Scargle method can successfully return a period. Data for all 3 populations, as well as cumulative plots, are shown below.</p>
+
+<p><div class="me">
+     <img src="Poster_grid_plot.pdf" style="float: center; width: 70%; padding: 20px;">
+  </div></p>
+
+<p>We also are interested in finding the period recovery at each 10-degree viewing fiel for the LSST. This mollweide plot shows the fraction of periods recovered at each field based on right ascension and declination. Knowing where in the sky LSST will be able to best recover periods will allow us to more effectively study binary systems.</p>
+
+<p><div class="me">
+     <img src="mollweide_percent_rec.pdf" style="float: center; width: 70%; padding: 20px;">
+  </div></p>
+
+<font size="4"><b>Results</b></font>
+
+<p>Overall, our method is able to observe 1.4% of all binaries in the southern sky with LSST. Of those observed, 5% have periods that are recoverable by the Lomb-Scargle periogoram.</p>
+
+<font size="4"><b>References & Acknowledgments</b></font>
+
+<p>"ellc: a fast, flexible light curve model", Maxted 2016, A&A, 591, 16</p>
+<p>"Periodograms for Multiband Astronomical Time Series", VanderPlas and Ivezic 2015, ApJ, 812, 18</p>
+<p>"The Eclipsing Binary V1061 Cygni: Confronting Stellar Evolution Models for Active and Inactive Solar-Type Stars", Torres et al. 2006, ApJ, 640, 20</p>
+<p>"Initial Estimates on the Performance of the Lsst on the Detection of Eclipsing Binaries", Wells and Prsa 2017, PASP, 129, 18</p>
+<p>"Gravity and limb-darkening coefficients for the <i>Kepler</i>, CoRoT, <i>Spitzer</i>, uvby, UBVRIJHK, and Sloan photometric systems", Claret & Bloemen 2011, A&A 529, A75</p>
+
+<p>This research was supported in part through the computational resources and staff contributions provided for the Quest high performance computing facility at Northwestern University which is jointly supported by the Office of the Provost, the Office for Research, and Northwestern University Information Technology.
+
+It was also supported by an LSSTC Enabling Science Grant, Award # 2018-UG04.</p>
+
+<h3 style="font-family: Arial">Past Research</h3>
+
+<b>Interstellar Medium (Meyer Group), Northwestern University</b>
+
+<p>Studied chemical composition of high-latitude cloud complexes. Attempted to find better distance estimates for the line-if sight distances to high-latitude interstellar cloud complexes.</p>
+
+
+
+
+
+<h3 style="font-family: Arial"><i> For clarification or details about any of the above work, please visit my CV or contact me directly! </i></h3>
+
+</div>
+
+</body>
+</html>

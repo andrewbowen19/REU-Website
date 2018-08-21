@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+    body {
+        margin: 0px;
+        background-image: url("Smokys_background.jpg")
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 130%
+    }
+        
+    .contact {
+        width: 20%;
+    }
+    
+    .container {
+    overflow: hidden;
+    background-color: #99badd;
+    font-family: Arial;
+    }
+
+    .container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    .dropdown {
+    float: left;
+    overflow: hidden; 
+    }
+
+    .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    }
+
+    .container a:hover, .dropdown:hover .dropbtn {
+    background-color: #005bb8;
+    }
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00356b;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+    .dropdown-content a {
+    float: none;
+    color: #00356b;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+
+    .dropdown-content a:hover {
+    background-color: #ddd;
+    }
+
+    .show {
+    display: block;
+    }
+
+    
+    </style>
+    
+    <title>Other Interests | Andrew Bowen</title>
+
+    <link rel="stylesheet" href=Bo.Styles.css">
+        
+</head>
+
+<body>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+};
+</script>
+<div class="header" style=" background: linear-gradient(to bottom, #99badd 0%, #000000 100%); padding: 10px; height: 150px ">
+  <div class="myself" style="float: left; padding-left: 20px">
+  <h1 style="color: white; font-family: Arial; font-size: 50px; margin-bottom: 0px">Andrew Bowen</h1>
+  <p style="color: white; font-style: italic">Northwestern University Physics & Astronomy</p>
+  </div>
+  <div class="contact" style="float: right; width: 50%; padding-right: 20px" >
+    <h4 style="color: white; text-align: right; line-height: 20%">Contact:</h4>
+
+    <p style="color: white; font-size: 14px; text-align: right">atbowen@gmail.com<br>
+    (856)-701-0268</p>
+    <div class=links style="float:right">
+    <a href= "https://www.linkedin.com/in/andrew-bowen-b9a38b156/" ><i class="fa fa-linkedin" style="color: white"></i></a>
+    &nbsp;
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="otherinterests.html">Other Interests</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="block1" style="background-color: #e5eaf0; position: absolute; margin-right: 0px;">
+  <div class="me">
+     <img src="Backpacking_pic.jpg" style="float: right; width: 30%; padding: 50px;">
+  <!--    <div>
+        <p style = 'style="float: right; width: 30%; padding: 50px;'>Here's me after backpacking for a week in the Great Smoky Mountains</p>
+    </div> -->
+  </div>
+
+
+  <div class="description" style="padding: 50px;">
+    <h2 style="font-family: Arial"> Other Interests/Projects </h2>
+    <p>In addition to astronomy, I am also very passionate about sports. I am a broadcaster and writer for Northwestern's WNUR Sports radio station. This extra-curricular has given me the opportunity to travel to some great college campuses to broadcast Northwestern sports on radio. As an extension of my love for sports, I also have a side project in which I am trying to apply network theory to basketball offenses.
+    </p>
+
+    <p> I have also been studying Italian for over two years now. I am not completely fluent yet, but hope to be when I return from study abroad at the University of Bologna this Fall of 2018. 
+    </p>
+ 
+    <p>When I am not at Northwestern, you can normally find me trapsing around the Pocono Mountains in Pennsylavnia, where I currently call 'home.' I am an avid fisherman and backpacker with a (some would say unhealthy) love of the outdoors. 
+
+    </p>
+  </div>
+
+
+
+
+</div>
+
+
+</body>
+</html>
+
